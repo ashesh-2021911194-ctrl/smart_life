@@ -1,0 +1,183 @@
+name: smart_life1
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.5
+  speech_to_text: ^6.1.1  # Free speech recognition 
+  natural_language: ^0.0.4
+  flutter_secure_storage: ^8.0.0
+  validators: ^3.0.0
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  percent_indicator: ^4.2.2
+  provider: ^6.1.1
+  geolocator_platform_interface: ^4.0.5
+  just_audio: ^0.9.34
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  uuid: ^4.1.0  
+  path_provider: ^2.0.0      # For generating unique IDs
+
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  intl: ^0.18.0
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^4.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  assets:
+    - assets/bghome2.png
+    - assets/notification_bar.png
+    - assets/sounds/hedwigs_theme.mp3
+    - assets/sounds/Voicy_Descendo - Spell SFX.mp3
+    # Ben 10 wallpapers
+    - assets/ben10/home_wallpaper.jpg
+    - assets/ben10/notes_wallpaper.jpg
+    - assets/ben10/expense_wallpaper.jpg
+    - assets/ben10/mission_wallpaper.jpg
+    - assets/ben10/tasks_wallpaper.jpg
+    
+    # Deadpool wallpapers
+    - assets/deadpool/home_wallpaper.jpg
+    - assets/deadpool/notes_wallpaper.jpg
+    - assets/deadpool/expense_wallpaper.jpg
+    - assets/deadpool/mission_wallpaper.jpg
+    - assets/deadpool/tasks_wallpaper.jpg
+    - assets/deadpool/deadpool_timer_bg.png
+    # Iron Man wallpapers
+    - assets/ironman/home_wallpaper.jpg
+    - assets/ironman/notes_wallpaper.jpg
+    - assets/ironman/expense_wallpaper.jpg
+    - assets/ironman/mission_wallpaper.jpg
+    - assets/ironman/tasks_wallpaper.jpg
+    
+    # Batman wallpapers
+    - assets/batman/home_wallpaper.jpg
+    - assets/batman/notes_wallpaper.jpg
+    - assets/batman/expense_wallpaper.jpg
+    - assets/batman/mission_wallpaper.jpg
+    - assets/batman/tasks_wallpaper.jpg
+    
+    # Tanjiro wallpapers
+    - assets/tanjiro/harrpotter_homepage.jpg
+    - assets/tanjiro/harrypotter_notelist.jpg
+    - assets/tanjiro/harrypotter_budgetdash.jpg
+    - assets/tanjiro/harrypotter_budgetdash2.jpg
+    - assets/tanjiro/harrypotter_addexpense.jpg
+    - assets/tanjiro/harrypotter_createbudget.jpg
+    - assets/tanjiro/harrypotter_noteadd.jpg
+    - assets/tanjiro/harrypotter_tasklist.jpg
+    - assets/tanjiro/harrypotter_golden.jpg
+    - assets/tanjiro/harrypotter_mission.jpg
+    - assets/tanjiro/harrypotter_new.jpg
+    - assets/tanjiro/harrypotter_addbudget.jpg
+    - assets/tanjiro/harrypotter_addexpense2.jpg
+    - assets/tanjiro/harrypotter_notif.jpg
+    - assets/tanjiro/notif.jpg
+    
+    # Default wallpapers (optional)
+    - assets/default/home_wallpaper.jpg
+    - assets/default/notes_wallpaper.jpg
+    - assets/default/expense_wallpaper.jpg
+    - assets/default/mission_wallpaper.jpg
+    - assets/default/tasks_wallpaper.jpg
+  fonts:
+    - family: Orbitron
+      fonts:
+        - asset: assets/Orbitron-Regular.ttf
+        - asset: assets/Orbitron-Bold.ttf
+          weight: 700
+      
+    - family: Bangers
+      fonts:
+        - asset: assets/Bangers-Regular.ttf
+    - family: RobotoCondensed
+      fonts:
+        - asset: assets/RobotoCondensed-Regular.ttf
+    - family: Merriweather
+      fonts:
+        - asset: assets/Merriweather_24pt-Regular.ttf
+    - family: ParryHotter
+      fonts:
+        - asset: assets/tanjiro/ParryHotter.ttf
+    - family: LUMOS
+      fonts:
+        - asset: assets/tanjiro/LUMOS.ttf
+
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - a_dot_burr.jpeg
+  #   - a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
