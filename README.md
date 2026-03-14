@@ -1,3 +1,26 @@
+SmartLife
+
+Overview
+
+SmartLife is an offline mobile productivity application designed to help users organize their daily life and personal activities without requiring internet connectivity.
+
+Features
+	•	Task and mission planning
+	•	Expense tracking with categorized spending
+	•	Note management
+	•	Local data persistence using SQLite
+	•	Fully offline functionality
+
+Tech Stack
+
+Flutter • Dart • SQLite
+
+Goal
+
+To provide a lightweight and privacy-focused personal life management tool that works completely offline.
+
+
+
 # smart_life1
 
 A new Flutter project.
